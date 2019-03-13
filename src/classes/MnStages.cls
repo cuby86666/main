@@ -1,5 +1,5 @@
 public class MnStages extends ApplicationDomain {
-	//test	
+	//123
 	public enum Status {HOLDING, QUEUED, PROCESSING, COMPLETED, INVALID, DUPLICATED, IGNORED, FAILED, ABORTED}
 		
 	public static final Map<Status, String> STATUSES = new Map<Status, String> {
@@ -135,7 +135,7 @@ public class MnStages extends ApplicationDomain {
 			oppty.Design_Customer_Zip__c = ms.Addr_Design_Cust_Zip__c;
 			oppty.Design_Reg_Is_Created_By_B2B__c = ms.Reg_Is_Created_By_B2B__c;
 			oppty.Design_Reg_Is_Duplicated__c = ms.Reg_Is_Duplicated__c;
-			oppty.Design_Reg_Is_Transitioned__c = ms.Reg_Is_Transitioned__c;
+			oppty.Design_Reg_Is_Transitioned__c = ms.Reg_Is_Transitioned__c;//cuby
 			oppty.Design_Reg_Production_Date__c = ms.Reg_Production_Date__c;
 			oppty.Design_Reg_Reject_Reason__c = ms.Reg_Reject_Reason__c;
 			oppty.Design_Reg_Status__c = ms.Reg_Status__c;
@@ -163,7 +163,7 @@ public class MnStages extends ApplicationDomain {
 			oppty.Locked_Exchange_Rate__c = ms.Reg_Exchange_Rate__c;
 			oppty.One_Year_Pieces__c = ms.Reg_Project_Units__c;
 			oppty.Project__c = ms.Prog_Name__c;
-			oppty.Prototype_Required_Date__c = ms.Reg_Prototype_Date__c;
+			oppty.Prototype_Required_Date__c = ms.Reg_Prototype_Date__c;//cuby
 			oppty.Rejected_by__c = (ms.User_First_Name__c != null ? ms.User_First_Name__c : '') + ' ' + (ms.User_Last_Name__c != null ? ms.User_Last_Name__c : '');
 			oppty.Sub_Segment__c = (ms.Func_Name__c != null) ? ms.Func_Name__c.substringAfter('-') : null;
 			
@@ -194,8 +194,8 @@ public class MnStages extends ApplicationDomain {
 			opptyProd.Design_Reg_Part_Created_Date__c = ms.Reg_Part_Created_Date__c;
 			opptyProd.Design_Reg_Part_Modified_Date__c = ms.Reg_Part_Modified_Date__c;
 			opptyProd.Design_Reg_Part_Is_Obsolete__c = ms.Reg_Part_Is_Obsolete__c;
-			opptyProd.Design_Reg_Part_POS_Cost_Value__c = ms.Reg_Part_POS_Cost_Value__c;
-			opptyProd.Design_Reg_Part_Production_Win_Date__c = ms.Reg_Part_Production_Win_Date__c;
+			opptyProd.Design_Reg_Part_POS_Cost_Value__c = ms.Reg_Part_POS_Cost_Value__c;//cuby
+			opptyProd.Design_Reg_Part_Production_Win_Date__c = ms.Reg_Part_Production_Win_Date__c;//cuby
 			opptyProd.Distributor_Tracking_Number__c = ms.Reg_Part_Disti_Tracking_Num__c;
 			opptyProd.Expert_Certified__c = ms.Reg_Part_Is_Expert_Certified__c;
 			opptyProd.Final_Registration_Item__c = ms.Reg_Part_Final_Phase__c;
