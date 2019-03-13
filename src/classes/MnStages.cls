@@ -1,5 +1,5 @@
 public class MnStages extends ApplicationDomain {
-		
+	//test	
 	public enum Status {HOLDING, QUEUED, PROCESSING, COMPLETED, INVALID, DUPLICATED, IGNORED, FAILED, ABORTED}
 		
 	public static final Map<Status, String> STATUSES = new Map<Status, String> {
